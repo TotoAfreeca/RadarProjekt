@@ -1,0 +1,19 @@
+﻿<Window x:Class="RadarPO.Models.Windows.AddPlaneWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RadarPO.Models.Windows"
+        mc:Ignorable="d"
+        Title="AddPlaneWindow" Height="450" Width="800">
+    <Grid>
+        <ScrollViewer   HorizontalAlignment="Left" Height="409" VerticalAlignment="Top" Width="500" CanContentScroll="True">
+            <StackPanel x:Name ="ListOfStages" />
+        </ScrollViewer>
+        <Button Content="Add Flight Stage" Margin="505,10,10,368" Click="Add_Flight_Stage"/>
+        <Button Content="Add Vehicle" Margin="505,173,9.6,205" Click="Add_Plane"/>
+        <ComboBox Name="VehicleTypeComboBox" HorizontalAlignment="Left" Margin="505,73,0,0" VerticalAlignment="Top" Width="279" SelectionChanged="VehicleTypeComboBox_SelectionChanged"/>
+        <Image Name="VehicleIcon" HorizontalAlignment="Left" Height="30" Margin="631,117,0,0" VerticalAlignment="Top" Width="30"/>
+
+    </Grid>
+</Window>

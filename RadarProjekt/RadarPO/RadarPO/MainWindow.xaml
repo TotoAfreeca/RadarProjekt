@@ -1,0 +1,31 @@
+﻿<Window x:Class="RadarPO.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RadarPO"
+        mc:Ignorable="d"
+        Title="Radar" Height="700" Width="1000">
+    <Grid Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="500"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="650"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Right">
+            <Button Content="Info"    HorizontalAlignment="Center"  VerticalAlignment="Top"    Width="200" Height="60" />
+            <Button Content="Stop"    HorizontalAlignment="Center"  VerticalAlignment="Bottom" Width="200" Height="60" Click="Stop_Click" />
+            <Button Content="Resume"  HorizontalAlignment="Center"  VerticalAlignment="Bottom" Width="200" Height="60" Click="Resume_Click"/>
+            <Button Content="Random" HorizontalAlignment="Right"      VerticalAlignment="Bottom" Height="50" Width="200" Click="Generate_Random_Playground"/>
+            <Button Content="+" HorizontalAlignment="Right"      VerticalAlignment="Bottom" Height="50" Width="50" Click="Add_Plane_Click"/>
+        </StackPanel>
+        <ListBox HorizontalAlignment="Left" Height="150" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="630"/>
+
+    </Grid>
+
+
+</Window>
